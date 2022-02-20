@@ -36,6 +36,10 @@ const calculaPorcentagem = (num1, porcentagem) => {
     console.log(`A operação de porcentagem envolvendo os valores ${num1} e ${porcentagem}% é ${resposta}`);
 }
 
+const geradorDePorcentagem = (n1, n2) => {
+    let resposta = multiplicao(divisao(n1, n2), 100);
+    console.log(resposta);
+}
 adicionar(5, 8);
 subtracao(13, 8);
 multiplicao(13, 8);
@@ -43,3 +47,4 @@ divisao(13, 0);
 quadradoDoNumero(5);
 mediaDeTresNumeros(9,7,2);
 calculaPorcentagem(300, 15);
+geradorDePorcentagem(20, 200);
