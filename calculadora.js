@@ -27,14 +27,12 @@ const quadradoDoNumero = num1 => {
 }
 
 const mediaDeTresNumeros = (num1, num2, num3) => {
-    let resposta = (num1 + num2 + num3);
-    resposta = divisao(resposta, 3);
+    let resposta = divisao((num1 + num2 + num3), 3);
     console.log(`A operação ao mediaDeTresNumeros envolvendo os valores ${num1}, ${num2} e ${num3} é ${resposta}`);
 }
 
 const calculaPorcentagem = (num1, porcentagem) => {
-    let resposta = divisao(num1, 100);
-    resposta = multiplicao(resposta, porcentagem);
+    let resposta = multiplicao(divisao(num1, 100), porcentagem);
     console.log(`A operação de porcentagem envolvendo os valores ${num1} e ${porcentagem}% é ${resposta}`);
 }
 
