@@ -40,6 +40,7 @@ const geradorDePorcentagem = (n1, n2) => {
     let resposta = multiplicao(divisao(n1, n2), 100);
     console.log(resposta);
 }
+
 adicionar(5, 8);
 subtracao(13, 8);
 multiplicao(13, 8);
